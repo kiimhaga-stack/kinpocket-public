@@ -1,0 +1,18 @@
+Friend Tracker world map (worldmap.js, worldmap-data.js)
+
+Map data: Natural Earth, 1:50m Cultural Vectors, "Admin 0 - Countries" (ne_50m_admin_0_countries),
+from https://github.com/nvkelso/natural-earth-vector (naturalearthdata.com).
+License: public domain. "All versions of Natural Earth raster + vector map data found on this website
+are in the public domain. You may use the maps in any manner, including modifying the content and design,
+electronic dissemination, and offset printing." (https://www.naturalearthdata.com/about/terms-of-use/)
+Credit (optional, given anyway): Made with Natural Earth.
+
+Processing for Friend Tracker: pre-projected to the Natural Earth I projection, simplified with
+Douglas-Peucker (tolerance 0.18 map units), coordinates rounded to 0.1 unit, tiny islands dropped
+(every country keeps at least its largest polygon). Country borders follow Natural Earth's
+de facto boundaries; they are not a statement on any territorial dispute.
+
+worldmap.js (renderer) is part of Friend Tracker.
+
+State/province borders (worldmap-adm1.js: United States, Mexico, Canada, Russia, China, India, Brazil, Australia): Natural Earth 1:10m Cultural Vectors,
+Admin 1 – States, Provinces (boundary lines), public domain, https://www.naturalearthdata.com/. Pre-projected and simplified for Friend Tracker (2026-10-21).
